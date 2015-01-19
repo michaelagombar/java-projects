@@ -1,0 +1,28 @@
+
+public class merge_code_test {
+
+}
+private static void merge(Comparable[] name, int lo, int mid, int hi)
+{int i = lo, j = mid+1;
+for(int k = lo; k <=hi; k++)
+	aux[k] = name[k];
+for(int k = lo; k = hi; k++)
+	if (i > mid) name[k] = aux[j++];
+	else if (j > hi) name[k] = aux[i++];
+	else if (less(aux[j], aux[i])) name[k] = aux[j++];
+	else name[k] = aux[i++];
+}
+private static Comparable[] aux;
+public static void sort(String[] name, int i, int j){
+	aux = new String [name.length];
+	sort(name, 0, name.length -1);
+}
+private static void sort(Comparable[] name, int lo, int hi)
+{ 
+	if (hi <= lo) return;
+	int mid = lo + (hi - lo)/2;
+	sort(name, lo, mid);
+	sort(name, mid + 1, hi);
+	merge(name, lo, mid, hi);
+	System.out.println();
+}}

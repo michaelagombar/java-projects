@@ -1,0 +1,15 @@
+import java.util.Arrays;
+
+//import edu.princeton.cs.algs4.StdOut;
+public class Week_3_Assignement_1 {
+
+	public static void main(String[] args) {
+		private static void arrayprint(String[] name int i){
+		// TODO Auto-generated method stub
+		 String[] names = new String[]{"Mike", "Agombar", "Paul", "John", "Taco"};
+		 for(int i = 0; i < names.length; i++)
+			 System.out.println(names);
+		}
+	}
+}
+

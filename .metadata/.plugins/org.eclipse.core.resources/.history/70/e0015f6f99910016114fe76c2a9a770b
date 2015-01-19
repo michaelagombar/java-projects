@@ -1,0 +1,14 @@
+import java.util.Arrays;
+
+//import edu.princeton.cs.algs4.StdOut;
+public class Week_3_Assignement_1 {
+
+	public static void main(String[] args) {
+		String [] name = new String[] {"mike", "Agombar", "paul", "john", "taco:"};
+		for (int i = 0; i < name.length; i++)
+			if(i == name.length)
+				System.out.println(name);
+		}
+	}
+
+

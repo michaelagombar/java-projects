@@ -1,0 +1,40 @@
+import java.util.Arrays;
+
+import edu.princeton.cs.algs4.Merge;
+
+//import edu.princeton.cs.algs4.StdOut;
+public class Week_3_Assignement_1 {
+
+	public static void main(String[] args) {
+		String [] name = new String[] {"Mike", "Agombar", "Paul", "John", "Taco"};
+		for (int i = 0; i < name.length; i++)
+			System.out.println(name[i]);
+	}
+	private static boolean less(Comparable v, Comparable w)
+	{return v.compareTo(w) < 0; }
+
+	private static void exch(Comparable[] name, int i, int j)
+	{Comparable t = name[i]; name[i] = name[j]; name[j] = t;}
+
+	public static void sort(Comparable[] name){
+
+		int N = name.length;
+		for(int i = 0; i < N; i++){
+			int min = i;
+			for (int j = i +1; j < N; j++)
+				if (less(name[j], name[min])) min = j;
+			exch(name, i, min);
+		}
+		
+	
+			
+			
+		}
+	
+
+}
+			
+	
+
+
+
